@@ -1,5 +1,51 @@
 # 🔤 Microsoft Evaluation Center – Windows VM Setup Guide
 
+## 📚 Table of Contents
+
+### 🔤 Microsoft Evaluation Center – Windows VM Setup Guide
+
+* [🌐 Step 1: Access the Microsoft Evaluation Center](#-step-1-access-the-microsoft-evaluation-center)
+* [🧰 Step 2: Why Use a Virtual Machine?](#-step-2-why-use-a-virtual-machine)
+* [🗭 Step 3: Navigate the Download Page](#-step-3-navigate-the-download-page)
+* [📅 Step 4: Download the ISO File](#-step-4-download-the-iso-file)
+* [🔧 Step 5: Create VM Using ISO](#-step-5-create-vm-using-iso)
+* [💡 Tips](#-tips)
+* [🧪 Summary Table](#-summary-table)
+
+### 🖠️ Installing Windows 11 in VirtualBox
+
+* [🧱 Step 1: New VM Setup](#-step-1-new-vm-setup)
+* [⚙️ Step 2: Configure Settings](#-step-2-configure-settings)
+* [🤮 Step 3: Assign Resources](#-step-3-assign-resources)
+* [📀 Step 4: Set Up Hard Disk](#-step-4-set-up-hard-disk)
+* [🚫 Step 5: Boot and Begin Install](#-step-5-boot-and-begin-install)
+* [🧙 Step 6: Complete Installation Wizard](#-step-6-complete-installation-wizard)
+* [👤 Step 7: Local Account Setup](#-step-7-local-account-setup)
+* [🚫 Step 8: Privacy Settings](#-step-8-privacy-settings)
+
+### 💻 Guest Additions & Full Screen
+
+* [🧙 Step 1: Log In](#-step-1-log-in)
+* [📀 Step 2: Insert Guest Additions CD](#-step-2-insert-guest-additions-cd)
+* [🛠️ Step 3: Run Installer](#-step-3-run-installer)
+* [🔄 Step 4: Reboot](#-step-4-reboot)
+* [💻 Step 5: Full Screen Mode](#-step-5-full-screen-mode)
+
+### 📸 Taking & Restoring Snapshots
+
+* [🧬 Why Snapshots?](#-why-snapshots)
+* [📸 Step 1: Take Snapshot](#-step-1-take-snapshot)
+* [📂 Step 2: Test (optional)](#-step-2-test-optional)
+* [🛀 Step 3: Power Off](#-step-3-power-off)
+* [🔄 Step 4: Restore Snapshot](#-step-4-restore-snapshot)
+* [▶️ Step 5: Restart VM](#️-step-5-restart-vm)
+
+### ✅ Final
+
+* [🚀 You’re Ready!](#-youre-ready)
+
+---
+
 ## 🌐 Step 1: Access the Microsoft Evaluation Center
 
 🔗 Visit: [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter)
