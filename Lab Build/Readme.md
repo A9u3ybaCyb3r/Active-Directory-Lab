@@ -327,8 +327,14 @@ This guide walks you through:
 
 ![image](https://github.com/user-attachments/assets/e8ffd345-600a-4678-946b-f8c4c0379a34)
 
-3. Click **Get Started for Free**
+3. On **Get Started for Free** click on **Download the ISO**
+
+![image](https://github.com/user-attachments/assets/3f84cee9-7726-4276-8805-78210b713cd6)
+
 4. Fill out the form and download the **64-bit ISO**
+
+![image](https://github.com/user-attachments/assets/79a876e4-7843-4ef1-91ad-abaa84b9b55e)
+
 5. Save it to your lab folder (e.g., `AD-Lab-Files`)
 
 ---
@@ -336,18 +342,68 @@ This guide walks you through:
 ## 🛠️ Install on VirtualBox
 
 1. Open **VirtualBox** → **New VM**
+
+![image](https://github.com/user-attachments/assets/7a074b89-7508-48e5-9b5d-5dcbd83a027b)
+
 2. Attach the downloaded ISO
 3. Skip Unattended Installation ✅
+
+![image](https://github.com/user-attachments/assets/6da08730-6d33-4a6e-a747-f9f169fb0a48)
+
 4. Allocate:
 
    * **RAM**: 8 GB
    * **CPU**: 4 cores
+
+![image](https://github.com/user-attachments/assets/198ee385-820c-499d-b61e-e34114791fcc)
+
    * **Disk**: 50 GB (dynamic)
-5. Start VM → Boot into ISO
-6. Choose **Standard Eval (Desktop Experience)**
-7. Custom install → Select disk → Next
-8. Set admin password: `P@ssword!`
-9. First login: **Insert Ctrl+Alt+Del** → enter password
+
+![image](https://github.com/user-attachments/assets/9248cea8-54ba-4040-a689-4c3bb2942e92)
+
+---
+
+### 🚀 Start the VM & Begin Installation
+
+- Click **Start** to launch the VM
+- Follow setup prompts:
+    - Language: English (United States)
+    - Keyboard: US
+    - Click **Install Now**
+
+![image](https://github.com/user-attachments/assets/d35d7017-db99-4f08-8ade-6c2272bb0a7a)
+
+
+---
+
+### 🪟 Select Windows Server Edition
+
+Choose:  
+🔹 **Standard Evaluation (Desktop Experience)**  
+Click **Next** → ![[Pasted image 20250522211332.png]]Accept Terms → Click **Next**
+![[Pasted image 20250522211311.png]]
+![[Pasted image 20250522211335.png]]
+
+---
+
+### 🖱️ Custom Install
+
+- Select the listed drive (Drive 0)
+- Click **Next**  
+    The installation will begin (takes several minutes)
+![[Pasted image 20250522211354.png]]
+
+---
+
+### 🔐 Set Administrator Password
+
+Choose a **lab-friendly password** (example):
+
+```
+P@ssword!
+```
+![[Pasted image 20250522211419.png]]
+You’ll use this to log in later.
 
 ---
 
