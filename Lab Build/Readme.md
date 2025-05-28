@@ -373,6 +373,7 @@ This guide walks you through:
 
 ![image](https://github.com/user-attachments/assets/d35d7017-db99-4f08-8ade-6c2272bb0a7a)
 
+![image](https://github.com/user-attachments/assets/e9054300-3e07-4daf-b9d2-dea17a6d200e)
 
 ---
 
@@ -380,9 +381,11 @@ This guide walks you through:
 
 Choose:  
 🔹 **Standard Evaluation (Desktop Experience)**  
-Click **Next** → ![[Pasted image 20250522211332.png]]Accept Terms → Click **Next**
-![[Pasted image 20250522211311.png]]
-![[Pasted image 20250522211335.png]]
+Click **Next** → Accept Terms → Click **Next**
+
+![image](https://github.com/user-attachments/assets/b73b21b9-c3a9-4b4c-bfbd-1b64e7130607)
+
+![image](https://github.com/user-attachments/assets/468eca2c-b163-4ac1-b65e-8f54e29cd17b)
 
 ---
 
@@ -391,7 +394,10 @@ Click **Next** → ![[Pasted image 20250522211332.png]]Accept Terms → Click **
 - Select the listed drive (Drive 0)
 - Click **Next**  
     The installation will begin (takes several minutes)
-![[Pasted image 20250522211354.png]]
+
+![image](https://github.com/user-attachments/assets/9acbb6cf-508a-4393-af40-01b190a3804f)
+
+![image](https://github.com/user-attachments/assets/d963d8dc-c7be-4bdd-81a9-429f4fb5fa9e)
 
 ---
 
@@ -402,7 +408,9 @@ Choose a **lab-friendly password** (example):
 ```
 P@ssword!
 ```
-![[Pasted image 20250522211419.png]]
+
+![image](https://github.com/user-attachments/assets/779cc49a-1dcc-4021-a65c-810f2a2fd40e)
+
 You’ll use this to log in later.
 
 ---
