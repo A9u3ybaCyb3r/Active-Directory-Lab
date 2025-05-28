@@ -1,15 +1,5 @@
 # 🛡️ Active Directory Lab
 
-## 📂 Table of Contents
-
-* [Overview](#overview)
-* [Lab Objectives](#lab-objectives)
-* [Skills Learned](#skills-learned)
-* [Tools Used](#tools-used)
-* [Disclaimer](#disclaimer)
-
----
-
 ## 📘 Overview
 
 This lab simulates a basic **Active Directory environment** in a virtualized setup to practice enterprise identity and access management. It guides users through essential domain administrative tasks such as user and group management, domain joining, and Group Policy configuration using **Windows Server 2022** and **Windows 11**.
@@ -44,9 +34,3 @@ This lab simulates a basic **Active Directory environment** in a virtualized set
 * 🪟 **Windows Server 2022 ISO**
 * 🪟 **Windows 11 ISO**
 * 💾 **PowerShell**
-
----
-
-## ⚠️ Disclaimer
-
-This lab is intended for **educational purposes only**. All activities should be performed in an **isolated virtual environment** and never on production systems.
