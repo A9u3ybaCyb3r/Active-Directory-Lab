@@ -85,6 +85,11 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 
 1. Scroll to **Windows** section
 2. Click **Windows 11 Enterprise**
+
+![image](https://github.com/user-attachments/assets/875172c0-7af5-41fa-9997-95aaec062969)
+
+![image](https://github.com/user-attachments/assets/43b760e1-7c7a-4d09-9361-35d8fb66aac0)
+
 3. You’ll be redirected to the download form
 
 ---
@@ -94,6 +99,9 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 1. Fill out the form (use placeholders if needed)
 2. Click **Download Now**
 3. Choose **English (US)** + **64-bit ISO**
+
+![image](https://github.com/user-attachments/assets/79cdcf35-20cf-4329-9d47-badaef2aedec)
+
 4. File will start downloading — valid for **90 days**
 
 ---
@@ -104,16 +112,19 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 
 1. Open **VirtualBox**
 2. Click **Tools** → **New**
-3. Name it and select your ISO image
-4. Click **Open**
+
+![image](https://github.com/user-attachments/assets/20746b52-8d04-4297-a336-26327e0eff8c)
 
 ---
 
 ## ⚙️ Step 2: Configure Settings
 
+* Name it and select your ISO image
 * Auto-detected as **Windows 11 Enterprise**
 * Check **Skip Unattended Installation** ✅
 * Click **Next**
+
+![image](https://github.com/user-attachments/assets/4e7eadf7-7591-463b-a2b8-e2474d8b0882)
 
 ---
 
@@ -123,6 +134,8 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 * CPU: **2+ cores** (watch the green usage bar)
 * Click **Next**
 
+![image](https://github.com/user-attachments/assets/69294904-4b76-402a-a1b7-d7512e5a4885)
+
 ---
 
 ## 📀 Step 4: Set Up Hard Disk
@@ -130,6 +143,8 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 * Disk size: **80 GB** (dynamic)
 * Uncheck **Pre-allocate full size**
 * Click **Next** → **Finish**
+
+![image](https://github.com/user-attachments/assets/46ad739f-5f27-4c5a-b893-5d14dc1e0d05)
 
 ---
 
@@ -143,10 +158,29 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 ## 🧙 Step 6: Complete Installation Wizard
 
 * Accept defaults (Language, Keyboard)
+
+![image](https://github.com/user-attachments/assets/67258473-9145-4d25-bd79-ba2aa5e432ba)
+
+![image](https://github.com/user-attachments/assets/6a7fc457-3fb8-4cee-b33a-dd9d97c09363)
+
 * Click **Install Now**
+
+![image](https://github.com/user-attachments/assets/f02907f3-570c-4862-97c9-d158790f40ef)
+
 * Accept license → Click **Next**
+
+![image](https://github.com/user-attachments/assets/250b3331-0786-41f9-acf6-62ae74f88b31)
+
 * Choose **Custom Install**
 * Select the drive → Click **Next**
+
+![image](https://github.com/user-attachments/assets/f63664cc-da6a-4653-8704-87d2d5ceab5b)
+
+* Click **Install**
+
+![image](https://github.com/user-attachments/assets/ea26f59e-e60c-42ca-80cc-1a65932e3ca9)
+
+* Wait for the installation to finish
 
 ---
 
