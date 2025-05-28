@@ -7,8 +7,7 @@
 3. [🗭 Navigate the Download Page](#-step-3-navigate-the-download-page)
 4. [📅 Download the ISO File](#-step-4-download-the-iso-file)
 5. [🔧 Create VM Using ISO](#-step-5-create-vm-using-iso)
-6. [💡 Tips](#-tips)
-7. [🧪 Summary Table](#-summary-table)
+6. [🧪 Summary Table](#-summary-table)
 
 ---
 
@@ -114,14 +113,6 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 * Load ISO as startup disk
 * Install Windows 11 normally
 * Take a **snapshot** after setup
-
----
-
-## 💡 Tips
-
-* 📆 Reminder: rearm/reset before 90 days
-* 🧠 Practice snapshot workflow
-* 🌍 Use same VM throughout the course
 
 ---
 
