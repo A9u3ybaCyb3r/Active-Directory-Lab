@@ -187,9 +187,23 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 ## 👤 Step 7: Local Account Setup
 
 * Choose region/keyboard: US
+
+![image](https://github.com/user-attachments/assets/08135280-8a80-41bc-9262-44a82b2d4c23)
+
+![image](https://github.com/user-attachments/assets/195973d8-daf1-4eb4-85d4-c6add30ccc0d)
+
 * Skip network setup
 * Sign-in Options → **Domain Join Instead**
+
+![image](https://github.com/user-attachments/assets/a286f417-f137-4295-9f2d-f5e9d54e6cdf)
+
+![image](https://github.com/user-attachments/assets/af913ea7-c17e-4857-baf2-b422119bb6f6)
+
 * Enter name/password/security Qs
+
+![image](https://github.com/user-attachments/assets/a620cd07-351b-4cf1-8203-83b21dd1213e)
+
+![image](https://github.com/user-attachments/assets/ed0bc543-6c79-4944-802e-f27f6d85bf2d)
 
 ---
 
@@ -197,6 +211,8 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 
 * Uncheck all boxes for privacy ✉️
 * Click **Accept**
+
+![image](https://github.com/user-attachments/assets/3a544938-1e34-4a85-8f99-b6ed6feb94eb)
 
 ---
 
@@ -207,25 +223,39 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 * Drag up to unlock
 * Enter your password
 
+![image](https://github.com/user-attachments/assets/62b61ecb-af0f-4a0a-a38b-8d8a0eb88da1)
+
 ## 📀 Step 2: Insert Guest Additions CD
 
 * Devices → Insert Guest Additions CD image
+
+![image](https://github.com/user-attachments/assets/c8f8b806-f0a5-4ffc-aa26-3d1110afb6fe)
+
 * Open File Explorer → locate DVD drive
+
+![image](https://github.com/user-attachments/assets/7dd06d13-be44-46ff-a0d1-768250b3ed98)
 
 ## 🛠️ Step 3: Run Installer
 
 * Right-click `VBoxWindowsAdditions-amd64.exe` → Run as Admin
 * Follow wizard steps → Install
 
+![image](https://github.com/user-attachments/assets/2a146460-403f-4570-b8ca-ab90a02a8698)
+
 ## 🔄 Step 4: Reboot
 
 * Click **Reboot Now** after install
+
+![image](https://github.com/user-attachments/assets/376a334d-c56c-4ac0-bf26-6af6b8c4f7d4)
+
 * Log back into Windows
 
 ## 💻 Step 5: Full Screen Mode
 
 * View → Auto-resize Guest Display ✅
 * View → Full Screen Mode (Host + F)
+
+![image](https://github.com/user-attachments/assets/33dba844-0bc5-41f9-b962-c6ca3f81e3c3)
 
 ---
 
@@ -239,25 +269,43 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 ## 📸 Step 1: Take Snapshot
 
 * Machine → Take Snapshot
+
+![image](https://github.com/user-attachments/assets/563d31e1-8c98-4911-b703-8347c3d935f9)
+
 * Name it (e.g., "Fresh Install") → OK
+
+![image](https://github.com/user-attachments/assets/31d15183-a08c-415c-9bf0-49ad7ad34e42)
 
 ## 📂 Step 2: Test (optional)
 
 * Create a temp file or folder
 
+![image](https://github.com/user-attachments/assets/3b7520c2-77af-455f-8d00-f98025c8a7d6)
+
+![image](https://github.com/user-attachments/assets/8e5d6984-278c-4b43-bd67-9d2ff28fed4b)
+
 ## 🛀 Step 3: Power Off
 
 * Close VM → Power Off
 
+![image](https://github.com/user-attachments/assets/f7c173b7-cce4-4280-9cb8-ab45d82f6efa)
+
 ## 🔄 Step 4: Restore Snapshot
 
 * Snapshots pane → Select snapshot → Restore
+
+![image](https://github.com/user-attachments/assets/e2a6c7d8-9d80-481f-a7c7-a4250391ac36)
+
 * Uncheck "Keep current state" → Confirm
+
+![image](https://github.com/user-attachments/assets/a76cb846-8d93-4272-b962-4232ec58a54c)
 
 ## ▶️ Step 5: Restart VM
 
 * Click **Start**
 * Temp changes gone? Snapshot worked! 🎉
+
+![image](https://github.com/user-attachments/assets/96765d52-9a24-45ae-a013-7e60a7fb3d8a)
 
 ---
 
@@ -265,7 +313,7 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 
 This guide walks you through:
 
-* Downloading **Windows Server 2022** from Microsoft's Evaluation Center
+* Downloading **Windows Server 2022** from Microsoft's Evaluation Center.
 * Installing it on VirtualBox
 * Configuring a **Domain Controller** (`DC01`)
 * Adding users, clients, shared folders, and applying GPOs
@@ -276,6 +324,9 @@ This guide walks you through:
 
 1. Visit: [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter)
 2. Select **Windows Server 2022**
+
+![image](https://github.com/user-attachments/assets/e8ffd345-600a-4678-946b-f8c4c0379a34)
+
 3. Click **Get Started for Free**
 4. Fill out the form and download the **64-bit ISO**
 5. Save it to your lab folder (e.g., `AD-Lab-Files`)
