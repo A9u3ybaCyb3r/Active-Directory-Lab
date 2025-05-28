@@ -7,7 +7,6 @@
 3. [🗭 Navigate the Download Page](#-step-3-navigate-the-download-page)
 4. [📅 Download the ISO File](#-step-4-download-the-iso-file)
 5. [🔧 Create VM Using ISO](#-step-5-create-vm-using-iso)
-6. [🧪 Summary Table](#-summary-table)
 
 ---
 
@@ -113,19 +112,6 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 * Load ISO as startup disk
 * Install Windows 11 normally
 * Take a **snapshot** after setup
-
----
-
-## 🧪 Summary Table
-
-| Step | Task                         |
-| ---- | ---------------------------- |
-| 🌐   | Go to Evaluation Center      |
-| 🔍   | Select Windows 11 Enterprise |
-| 📝   | Complete short form          |
-| 📂   | Download ISO (64-bit)        |
-| 🔧   | Set up VM                    |
-| 🧼   | Take clean snapshot          |
 
 ---
 
