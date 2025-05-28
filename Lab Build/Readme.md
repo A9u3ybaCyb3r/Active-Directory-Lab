@@ -535,15 +535,36 @@ Login with your **admin password**.
 
 ![image](https://github.com/user-attachments/assets/54ae75f3-8f93-40a6-a27c-19144d4ab81a)
 
-3. Configure → Certification Authority → Enterprise CA → New key
+3. Proceed with all defaults and select
 
-4. Defaults → 5-year validity → Finish
+☑️ Restart the destination server automatically if required → then Install
+
+![image](https://github.com/user-attachments/assets/5951b312-969e-48e4-b181-9e16d418d46b)
+
+4. Configure Active Directory Certificate Services → Certification Authority → Enterprise CA → New key
+
+![image](https://github.com/user-attachments/assets/01322bc2-d97a-4655-a1c3-627c089d4dcc)
+
+![image](https://github.com/user-attachments/assets/8b0c037a-538a-44f8-a1de-879cc57e3e08)
+
+![image](https://github.com/user-attachments/assets/79066cc2-3f10-411c-b3a4-fba2aee4f29f)
+
+![image](https://github.com/user-attachments/assets/51d116ea-f16f-47a8-b8fa-dc8dfd311eb0)
+
+5. Defaults → 5-year validity → Configure
+
+![image](https://github.com/user-attachments/assets/cf0efa41-d945-4c26-9602-6e6b60c5b8d4)
+
+![image](https://github.com/user-attachments/assets/a51871a8-3712-487a-b6bb-47dab53b785a)
 
 ---
 
 ## 👥 Add Users in ADUC
 
 1. Tools → AD Users & Computers (ADUC)
+
+![image](https://github.com/user-attachments/assets/b9379f67-a927-4350-bc93-2280792b43de)
+
 2. Create OUs:
 
    * Engineering
