@@ -235,7 +235,7 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 
 ## 🚀 You’re Ready!
 
-Take a snapshot after every config milestone. Need help exporting or cloning VMs next? Just ask! 🧳
+Take a snapshot after every config milestone. 
 
 ---
 
