@@ -415,12 +415,42 @@ You’ll use this to log in later.
 
 ---
 
+### 🔑 First Login
+
+- On the login screen, go to:
+```
+Input > Keyboard > Insert Ctrl+Alt+Del
+```
+
+![image](https://github.com/user-attachments/assets/5b74d093-5f28-4cd9-b683-071416e7f34e)
+
+- Enter your admin password
+
+![image](https://github.com/user-attachments/assets/e807ab80-de18-4892-bdc0-b322feaf58b2)
+
+---
+
 ### 🧰 Post-Install Enhancements
 
 1. Devices → Insert Guest Additions CD
+
+![image](https://github.com/user-attachments/assets/ca18c2d7-07b6-451a-b61b-968a3cd80e1d)
+
+![image](https://github.com/user-attachments/assets/45f64abd-2b6d-428f-a5e2-a1d317faac99)
+
 2. Run installer inside VM (as Admin)
+
+![image](https://github.com/user-attachments/assets/7d1fb119-0a6a-4459-9422-d8e87ef7cfaa)
+
 3. Reboot → Enable full screen
+
+![image](https://github.com/user-attachments/assets/e5b20afd-ca25-41bb-afd4-d9853a35cc06)
+
 4. Take a snapshot: `Server 2022 Fresh Install`
+
+![image](https://github.com/user-attachments/assets/cae06742-ff42-4f9d-a9ef-210576922b92)
+
+![image](https://github.com/user-attachments/assets/d20d18a4-e6e8-4bef-b109-95ccf5c89267)
 
 ---
 
@@ -428,24 +458,85 @@ You’ll use this to log in later.
 
 ### Rename the Server:
 
-* PC Name: `DC01` → Restart
+1. Click **Start** and type `View your PC name`
 
-### Install AD DS:
+![image](https://github.com/user-attachments/assets/9544e9a7-98de-4945-9fe3-38e7ea5b6614)
 
-1. Server Manager → Add Roles → Select **AD DS**
-2. Add Features → Continue → Install
+2. Click **Rename this PC**
+
+![image](https://github.com/user-attachments/assets/21e89af8-b584-4896-9469-ebf7f29f75d3)
+
+3. PC Name: `DC01` → Restart Now
+
+![image](https://github.com/user-attachments/assets/a3bbb637-f353-47ad-812f-c3de167b7a40)
+
+![image](https://github.com/user-attachments/assets/f509823c-9366-4d33-89e4-e4139f151efc)
+
+### Install Active Directory Domain Services:
+
+1. After reboot, open **Server Manager**
+2. Click **Manage > Add Roles and Features**
+
+![image](https://github.com/user-attachments/assets/eabaf5ec-340d-4c9c-a436-715183fc039e)
+
+3. Proceed with defaults until you reach **Server Roles**
+4. Select ✅ **Active Directory Domain Services**
+5. Click **Add Features** when prompted
+
+![image](https://github.com/user-attachments/assets/45463c02-9e55-4340-9f47-25578a052acf)
+
+![image](https://github.com/user-attachments/assets/a2e6885d-d8ad-47f3-8dc4-b843d524ef4e)
+
+6. Continue clicking **Next** until you can check:
+    - ☑️ Restart the destination server automatically if required
+
+![image](https://github.com/user-attachments/assets/8e5f585f-81fd-4baf-9c81-dd392e92cda4)
+
+🕐 Wait for installation to complete.
 
 ### Promote to Domain Controller:
 
 1. Server Manager → Promote → Add new forest: `lab.local`
-2. Set DSRM password
+
+![image](https://github.com/user-attachments/assets/8bf0ff1c-7742-430d-9ebf-d6bc9fd8b689)
+
+![image](https://github.com/user-attachments/assets/dcd771ef-367e-4ef4-8b65-3445c9c2dfb8)
+
+2. Use the same admin password to set DSRM password if you prefer (e.g., `P@ssword!`)
+
+![image](https://github.com/user-attachments/assets/80e1c9e6-c0e7-4bf4-b202-46fb7d3167cc)
+
 3. Default paths → Prerequisite check → ✅ Install → Reboot
 
-### Install AD CS:
+![image](https://github.com/user-attachments/assets/ebc8fba2-1784-4e1a-8bc2-6126cca8c760)
+
+## 🔐 Log into the Domain
+
+After reboot, you'll see:
+
+```
+lab\Administrator
+```
+
+![image](https://github.com/user-attachments/assets/97fcf826-92cd-40b7-9cd1-e2bbe3522fd6)
+
+Login with your **admin password**.  
+🎉 Congratulations — your server is now a **Domain Controller**!
+
+### Install Active Directory Certificate Services (AD CS):
 
 1. Add Roles → Select **AD Certificate Services**
+
+![image](https://github.com/user-attachments/assets/9f8e1489-45bb-448f-8306-03a41b0425ef)
+
+![image](https://github.com/user-attachments/assets/350fc42c-ade3-4f1a-95f7-a2d4943caf87)
+
 2. Add Features → Install
+
+![image](https://github.com/user-attachments/assets/54ae75f3-8f93-40a6-a27c-19144d4ab81a)
+
 3. Configure → Certification Authority → Enterprise CA → New key
+
 4. Defaults → 5-year validity → Finish
 
 ---
