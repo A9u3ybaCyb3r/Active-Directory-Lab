@@ -2,47 +2,72 @@
 
 ## 📚 Table of Contents
 
-### 🔤 Microsoft Evaluation Center – Windows VM Setup Guide
+### 🪟 Microsoft Evaluation Center – Windows VM Setup
 
-* [🌐 Step 1: Access the Microsoft Evaluation Center](#-step-1-access-the-microsoft-evaluation-center)
-* [🧰 Step 2: Why Use a Virtual Machine?](#-step-2-why-use-a-virtual-machine)
-* [🗭 Step 3: Navigate the Download Page](#-step-3-navigate-the-download-page)
-* [📅 Step 4: Download the ISO File](#-step-4-download-the-iso-file)
-* [🔧 Step 5: Create VM Using ISO](#-step-5-create-vm-using-iso)
-* [💡 Tips](#-tips)
-* [🧪 Summary Table](#-summary-table)
+1. [🌐 Access the Microsoft Evaluation Center](#-step-1-access-the-microsoft-evaluation-center)
+2. [🧰 Why Use a Virtual Machine?](#-step-2-why-use-a-virtual-machine)
+3. [🗭 Navigate the Download Page](#-step-3-navigate-the-download-page)
+4. [📅 Download the ISO File](#-step-4-download-the-iso-file)
+5. [🔧 Create VM Using ISO](#-step-5-create-vm-using-iso)
+6. [💡 Tips](#-tips)
+7. [🧪 Summary Table](#-summary-table)
 
-### 🖠️ Installing Windows 11 in VirtualBox
+---
 
-* [🧱 Step 1: New VM Setup](#-step-1-new-vm-setup)
-* [⚙️ Step 2: Configure Settings](#-step-2-configure-settings)
-* [🤮 Step 3: Assign Resources](#-step-3-assign-resources)
-* [📀 Step 4: Set Up Hard Disk](#-step-4-set-up-hard-disk)
-* [🚫 Step 5: Boot and Begin Install](#-step-5-boot-and-begin-install)
-* [🧙 Step 6: Complete Installation Wizard](#-step-6-complete-installation-wizard)
-* [👤 Step 7: Local Account Setup](#-step-7-local-account-setup)
-* [🚫 Step 8: Privacy Settings](#-step-8-privacy-settings)
+### 🖥️ Installing Windows 11 in VirtualBox
+
+8. [🧱 New VM Setup](#-step-1-new-vm-setup)
+9. [⚙️ Configure Settings](#-step-2-configure-settings)
+10. [🤮 Assign Resources](#-step-3-assign-resources)
+11. [📀 Set Up Hard Disk](#-step-4-set-up-hard-disk)
+12. [🚫 Boot and Begin Install](#-step-5-boot-and-begin-install)
+13. [🧙 Complete Installation Wizard](#-step-6-complete-installation-wizard)
+14. [👤 Local Account Setup](#-step-7-local-account-setup)
+15. [🚫 Privacy Settings](#-step-8-privacy-settings)
+
+---
 
 ### 💻 Guest Additions & Full Screen
 
-* [🧙 Step 1: Log In](#-step-1-log-in)
-* [📀 Step 2: Insert Guest Additions CD](#-step-2-insert-guest-additions-cd)
-* [🛠️ Step 3: Run Installer](#-step-3-run-installer)
-* [🔄 Step 4: Reboot](#-step-4-reboot)
-* [💻 Step 5: Full Screen Mode](#-step-5-full-screen-mode)
+16. [🧙 Log In](#-step-1-log-in)
+17. [📀 Insert Guest Additions CD](#-step-2-insert-guest-additions-cd)
+18. [🛠️ Run Installer](#-step-3-run-installer)
+19. [🔄 Reboot](#-step-4-reboot)
+20. [💻 Full Screen Mode](#-step-5-full-screen-mode)
+
+---
 
 ### 📸 Taking & Restoring Snapshots
 
-* [🧬 Why Snapshots?](#-why-snapshots)
-* [📸 Step 1: Take Snapshot](#-step-1-take-snapshot)
-* [📂 Step 2: Test (optional)](#-step-2-test-optional)
-* [🛀 Step 3: Power Off](#-step-3-power-off)
-* [🔄 Step 4: Restore Snapshot](#-step-4-restore-snapshot)
-* [▶️ Step 5: Restart VM](#️-step-5-restart-vm)
+21. [🧬 Why Snapshots?](#-why-snapshots)
+22. [📸 Take Snapshot](#-step-1-take-snapshot)
+23. [📂 Test (optional)](#-step-2-test-optional)
+24. [🛀 Power Off](#-step-3-power-off)
+25. [🔄 Restore Snapshot](#-step-4-restore-snapshot)
+26. [▶️ Restart VM](#️-step-5-restart-vm)
 
-### ✅ Final
+---
 
-* [🚀 You’re Ready!](#-youre-ready)
+### 🖥️ Downloading & Installing Windows Server 2022 (Active Directory Lab)
+
+27. [🔎 Download Windows Server 2022](#-download-windows-server-2022)
+28. [🛠️ Install on VirtualBox](#️-install-on-virtualbox)
+29. [🏛️ Configure as Domain Controller](#️-configure-as-domain-controller)
+
+---
+
+### 🧑‍💼 Active Directory & GPO Tasks
+
+30. [👥 Add Users in ADUC](#-add-users-in-aduc)
+31. [🏁 Join Windows 11 to Domain](#-join-windows-11-to-domain)
+32. [🧱 OUs vs Groups & Folder Sharing](#-ous-vs-groups--folder-sharing)
+33. [🛠️ GPO: Set Desktop Wallpaper](#️-gpo-set-desktop-wallpaper)
+
+---
+
+### ✅ Final Summary
+
+34. [🚀 You’re Ready](#-youre-ready)
 
 ---
 
@@ -256,18 +281,6 @@ This guide walks you through:
 * Installing it on VirtualBox
 * Configuring a **Domain Controller** (`DC01`)
 * Adding users, clients, shared folders, and applying GPOs
-
----
-
-## 📚 Table of Contents
-
-* [🔎 Download Windows Server 2022](#-download-windows-server-2022)
-* [🛠️ Install on VirtualBox](#️-install-on-virtualbox)
-* [🏛️ Configure as Domain Controller](#️-configure-as-domain-controller)
-* [👥 Add Users in ADUC](#-add-users-in-aduc)
-* [🏁 Join Windows 11 to Domain](#-join-windows-11-to-domain)
-* [🧱 OUs vs Groups & Folder Sharing](#-ous-vs-groups--folder-sharing)
-* [🛠️ GPO: Set Desktop Wallpaper](#️-gpo-set-desktop-wallpaper)
 
 ---
 
