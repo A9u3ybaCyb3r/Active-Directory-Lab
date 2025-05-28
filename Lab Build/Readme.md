@@ -6,7 +6,6 @@
 2. [🧰 Why Use a Virtual Machine?](#-step-2-why-use-a-virtual-machine)
 3. [🗭 Navigate the Download Page](#-step-3-navigate-the-download-page)
 4. [📅 Download the ISO File](#-step-4-download-the-iso-file)
-5. [🔧 Create VM Using ISO](#-step-5-create-vm-using-iso)
 
 ---
 
@@ -102,16 +101,6 @@ Perfect for setting up lab environments with free trial versions of Windows 11 E
 2. Click **Download Now**
 3. Choose **English (US)** + **64-bit ISO**
 4. File will start downloading — valid for **90 days**
-
----
-
-## 🔧 Step 5: Create VM Using ISO
-
-* Launch **VirtualBox** / other hypervisor
-* Create new VM ✅
-* Load ISO as startup disk
-* Install Windows 11 normally
-* Take a **snapshot** after setup
 
 ---
 
