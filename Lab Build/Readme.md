@@ -1,5 +1,3 @@
-# 🔤 Microsoft Evaluation Center – Windows VM Setup Guide
-
 ## 📚 Table of Contents
 
 ### 🪟 Microsoft Evaluation Center – Windows VM Setup
@@ -70,6 +68,8 @@
 34. [🚀 You’re Ready](#-youre-ready)
 
 ---
+
+# 🔤 Microsoft Evaluation Center – Windows VM Setup Guide
 
 ## 🌐 Step 1: Access the Microsoft Evaluation Center
 
