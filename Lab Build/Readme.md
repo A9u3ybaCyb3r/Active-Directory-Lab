@@ -1119,21 +1119,28 @@ Create a GPO in this domain, and Link it here…
 ```
 Set Engineering Background
 ```
-![[Pasted image 20250523140005.png]]
+
+![image](https://github.com/user-attachments/assets/7627149d-65d5-4749-b47d-3cf14a086fa3)
 
 ---
 
 ### 🎛️ Step 4: Configure the GPO
 
 1. Right-click on the GPO → `Edit`
-![[Pasted image 20250523140653.png]]
+
+![image](https://github.com/user-attachments/assets/655e12c4-a20b-45d9-a15f-da976ac89646)
+
 2. Navigate to:
 ```
 User Configuration > Policies > Administrative Templates > Desktop > Desktop > Desktop Wallpaper
 ```
-![[Pasted image 20250523140807.png]]
+
+![image](https://github.com/user-attachments/assets/6d2da21a-91ed-47b7-886a-17f9b4fb4405)
+
 3. Double-click `Desktop Wallpaper` → Set to `Enabled`
-![[Pasted image 20250523140838.png]]
+
+![image](https://github.com/user-attachments/assets/75dab6c7-4f7f-427a-9462-3f3af0e93747)
+
 4. Paste the path from NetLogon (🛑 Remove quotes)
 ```
 \\dc01\netlogon\Engineering_Wallpaper.jpg
@@ -1143,23 +1150,15 @@ User Configuration > Policies > Administrative Templates > Desktop > Desktop > D
 
 ---
 
-### 💻 Step 5: Test the GPO
-
-#### 🔑 Log in as: `lab\rhendricks`
-
-- Richard Hendricks is in the **Engineering OU**
-- Enter password: `P@ssword1!`
-![[Pasted image 20250523140945.png]]
-
-✅ The wallpaper should update to the Engineering-themed background!
-![[Pasted image 20250523140958.png]]
-
----
-
 #### 🧪 Test with Non-Engineering User
 
 * Log in as `rhendricks` → ✅ Wallpaper appears
+
+![image](https://github.com/user-attachments/assets/794c8a32-c135-4315-8e37-8bd3ebf6fa6d)
+
 * Log in as `ebachman` → ❌ No change
+
+![image](https://github.com/user-attachments/assets/b3beb431-4634-4413-8c81-5d82e89e8af6)
 
 ---
 
