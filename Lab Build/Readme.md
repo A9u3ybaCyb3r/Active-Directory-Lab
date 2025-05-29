@@ -565,34 +565,95 @@ Login with your **admin password**.
 
 ![image](https://github.com/user-attachments/assets/b9379f67-a927-4350-bc93-2280792b43de)
 
-2. Create OUs:
+2. Expand your domain:
 
-   * Engineering
-   * Management
-   * IT → Administrators (nested)
-3. Move users to OUs:
+![image](https://github.com/user-attachments/assets/83641300-e647-45ee-9b76-351d07c988f3)
 
-   * `rhendricks`, `nbighetti` → Engineering
-   * `ebachman`, `jdunn` → Management
-   * `Administrator` → IT > Administrators
+- Move Built-In Groups to a New OU
 
-### Add Users:
+3. Right-click your domain name (e.g., `lab.local`)
+4. Select `New > Organizational Unit`
 
-* Right-click → New → User
-* Example:
+![image](https://github.com/user-attachments/assets/403f937c-207c-4e0c-9618-8bcd6d488c2a)
 
-  * Name: `Richard Hendricks`
-  * Username: `rhendricks`
-  * Password: `P@ssword1!`
-  * Set: Password never expires ✅
+5. Name it `Groups`
 
-📋 Repeat for:
+![image](https://github.com/user-attachments/assets/d47db64c-e3b4-4c0b-9c6e-6463b2bb5693)
 
-| Name            | Username  |
-| --------------- | --------- |
-| Nelson Bighetti | nbighetti |
-| Erlich Bachman  | ebachman  |
-| Jared Dunn      | jdunn     |
+6. In the **Users** folder:
+    - Select all groups (Shift + Click)
+    - Drag them into the new `Groups` OU
+    - Click **Yes** when prompted
+
+![image](https://github.com/user-attachments/assets/d69d345d-3387-4caf-b49b-f15f8f3284f2)
+
+![image](https://github.com/user-attachments/assets/cfb33891-8ddd-4cbb-9269-e747258acb81)
+
+Now the **Users** folder will contain only user accounts for easier management ✅
+
+![image](https://github.com/user-attachments/assets/27052db8-cef3-4904-8480-0713fd66ac2b)
+
+---
+
+### ➕ Create New Domain Users
+
+1. Right-click inside the **Users** container
+2. Select `New > User`
+
+![image](https://github.com/user-attachments/assets/ef28ca41-c8c4-4f39-a0f1-51764a99111f)
+
+3. Example:
+    - **First Name**: Richard
+    - **Last Name**: Hendricks
+    - **User Logon Name**: `rhendricks` or `r.hendricks`
+
+![image](https://github.com/user-attachments/assets/fa874822-1d7c-4de6-8f25-94156f5f170a)
+
+4. Click **Next**
+
+### 🔐 Set Password
+
+Use a lab-friendly password:
+
+```
+P@ssword1!
+```
+
+![image](https://github.com/user-attachments/assets/59933664-6f3b-4817-86c6-6ab9533746e5)
+
+5. Uncheck:
+    - ☑️ User must change password at next login
+6. Check:
+    - ☑️ Password never expires
+7. Click **Next > Finish**
+
+---
+
+## 🌀 Quickly Add More Users (via Copy)
+
+To create more users efficiently:
+
+1. Right-click your new user (e.g., `rhendricks`)
+2. Click **Copy**
+
+![image](https://github.com/user-attachments/assets/147a7a69-fde5-4732-8309-31ba7059cdcb)
+
+### Create These Example Users (or your own):
+
+|First Name|Last Name|Username|
+|---|---|---|
+|Nelson|Bighetti|`nbighetti`|
+|Ehrlich|Bachman|`ebachman`|
+|Jared|Dunn|`jdunn`|
+
+For each user:
+
+- Use the same password `P@ssword1!`
+- Set **Password never expires**
+
+Repeat the process to create all four domain users ✅
+
+![image](https://github.com/user-attachments/assets/b6a150e3-f7d7-49de-9ec1-689307436ac1)
 
 ---
 
@@ -600,15 +661,92 @@ Login with your **admin password**.
 
 ### Set Up VirtualBox NAT Network:
 
-* File > Network Manager → Create NAT Network → `AD Network`
+* File > Network Manager → Create NAT Network → `ADNetwork`
+
+![image](https://github.com/user-attachments/assets/dd03f5bb-e734-47a8-a84a-faebbf3f58e6)
+
+![image](https://github.com/user-attachments/assets/20576fcf-104b-4f0e-86ae-9931da4a1ce9)
+
+![image](https://github.com/user-attachments/assets/a626e84e-c390-4ae9-9585-17e9f789f8e1)
+
 * Attach both VMs to `AD Network`
 
-### Assign Static IPs:
+![image](https://github.com/user-attachments/assets/37f40482-56d0-4bed-8a20-5ea4ec73553e)
 
-| Device | IP        | DNS       |
-| ------ | --------- | --------- |
-| DC01   | 10.0.2.15 | 127.0.0.1 |
-| WS01   | 10.0.2.16 | 10.0.2.15 |
+![image](https://github.com/user-attachments/assets/6ec71d32-79c3-407b-8262-ecaf70ebb574)
+
+### 🌐 Assign Static IPs
+
+#### 🖥️ On the **Domain Controller**:
+
+1. Open **Command Prompt**, run:
+```
+ipconfig
+```
+    Example IP: `10.0.2.15`
+
+![image](https://github.com/user-attachments/assets/748dbb29-d3f8-49ce-8178-325b3d523b98)
+
+2. Right-click Internet
+3. Go to:
+```
+Open Network & Internet Settings > Change Adapter Options
+```
+![image](https://github.com/user-attachments/assets/4c90fc1d-16e5-4ae1-b194-57afcd127937)
+
+![image](https://github.com/user-attachments/assets/62b7efa5-893f-4418-a214-c6fbd3037403)
+
+4. Right-click Ethernet > Properties
+
+![image](https://github.com/user-attachments/assets/c31fa2b6-405d-48d6-b7ea-dad7e86623d3)
+
+5. Double-click: **Internet Protocol Version 4 (TCP/IPv4)**
+
+![image](https://github.com/user-attachments/assets/36b26ab4-07e0-419c-b5e6-ca3f7ab4fe8c)
+
+6. Use these static IP settings:
+
+![image](https://github.com/user-attachments/assets/b5ef7a64-8e6d-4916-a52f-d766eebb7825)
+
+| Field           | Value         |
+| --------------- | ------------- |
+| IP Address      | 10.0.2.15     |
+| Subnet Mask     | 255.255.255.0 |
+| Default Gateway | 10.0.2.1      |
+| Preferred DNS   | 127.0.0.1     |
+
+Click **OK** → **Close**
+
+---
+### 💻 On the **Windows 11 Workstation**:
+
+1. Run:
+```
+ipconfig
+```
+    Example IP: `10.0.2.4`
+
+![image](https://github.com/user-attachments/assets/bfa84d0e-c739-44ac-91ed-3209960e600b)
+
+2. Go to:
+```
+Network Connections > Ethernet > Properties > TCP/IPv4
+```
+![[Pasted image 20250522221253.png]]
+![[Pasted image 20250522221305.png]]
+![[Pasted image 20250522221344.png]]
+3. Use these settings:
+![[Pasted image 20250522221410.png]]
+
+| Field           | Value         |
+| --------------- | ------------- |
+| IP Address      | 10.0.2.16     |
+| Subnet Mask     | 255.255.255.0 |
+| Default Gateway | 10.0.2.1      |
+| Preferred DNS   | 10.0.2.15     |
+
+Click **OK** → **Close**
+
 
 ### Rename Workstation:
 
