@@ -1013,7 +1013,7 @@ We remove them because that's going to give permission to everyone.
 
 Click **Finish** → The shared drive is now mounted as Z:\
 
-![[Pasted image 20250523134005.png]]
+![image](https://github.com/user-attachments/assets/f0013988-305a-405e-9c1c-682dc6239208)
 
 ### Test Access:
 
