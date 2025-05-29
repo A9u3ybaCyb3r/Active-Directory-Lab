@@ -12,8 +12,6 @@
   * [🔁 Step 4: Test the Policy](#-step-4-test-the-policy)
   * [🎨 Step 5: Attempt to Change Background](#-step-5-attempt-to-change-background)
 * [✅ Result](#-result)
-* [🔑 Key Takeaways](#-key-takeaways)
-* [🧪 Next Steps](#-next-steps)
 
 ## 📋 Ticket Summary
 
