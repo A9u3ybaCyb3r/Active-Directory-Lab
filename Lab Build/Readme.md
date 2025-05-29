@@ -728,15 +728,17 @@ Example IP: `10.0.2.4`
 
 ![image](https://github.com/user-attachments/assets/bfa84d0e-c739-44ac-91ed-3209960e600b)
 
-2. Go to:
-```
-Network Connections > Ethernet > Properties > TCP/IPv4
-```
-![[Pasted image 20250522221253.png]]
-![[Pasted image 20250522221305.png]]
-![[Pasted image 20250522221344.png]]
+2. Go to `Network Connections > Ethernet > Properties > TCP/IPv4`
+
+![image](https://github.com/user-attachments/assets/a7b9bc09-d41e-4853-a51e-07bc2061a47c)
+
+![image](https://github.com/user-attachments/assets/c31d7d54-c39e-4731-805b-8b8c9ff92543)
+
+![image](https://github.com/user-attachments/assets/0f4505ab-dd88-48b5-8f41-e2098f28e41c)
+
 3. Use these settings:
-![[Pasted image 20250522221410.png]]
+
+![image](https://github.com/user-attachments/assets/3f6cd3ba-0a69-4344-8969-79a54fc99b56)
 
 | Field           | Value         |
 | --------------- | ------------- |
@@ -752,15 +754,47 @@ Click **OK** → **Close**
 
 * Name: `WS01` → Reboot
 
+![image](https://github.com/user-attachments/assets/9527500a-7807-4955-b9bd-385890fd1287)
+
+![image](https://github.com/user-attachments/assets/93d56a86-b59e-4d3d-ae5a-87e1c711570c)
+
+![image](https://github.com/user-attachments/assets/f7eea589-d048-4480-85d2-51a2ffa81df5)
+
+![image](https://github.com/user-attachments/assets/b544813b-0c64-40b2-a970-e440323ff808)
+
 ### Join Domain:
 
-* Settings → Access work/school → Join local AD domain → `lab.local`
+* On `WS01` go to Settings → Access work/school → Join local AD domain → `lab.local`
+
+![image](https://github.com/user-attachments/assets/9bc70c57-747f-4f0f-8dd2-81eef72cb5bd)
+
+![image](https://github.com/user-attachments/assets/c748084b-56e6-4abf-82c5-72923249a78f)
+
+![image](https://github.com/user-attachments/assets/ecac5223-869d-486e-bb93-72174a613a2c)
+
+![image](https://github.com/user-attachments/assets/c5ecc72c-3e8e-4439-90a8-f875ef86d608)
+
 * Credentials: `administrator` / `P@ssword!`
-* Restart → Log in as `lab\rhendricks`
+
+![image](https://github.com/user-attachments/assets/35dc5cd2-86a6-4906-9b9d-301d66fcef6f)
+
+* Select **Standard User**
+
+![image](https://github.com/user-attachments/assets/37cccb78-4087-44a1-8e84-a1716a1ac396)
+
+* Restart → Log in as `lab\rhendricks` with passoword of `P@ssword1!`
+
+![image](https://github.com/user-attachments/assets/6ac496f3-bab8-44b7-ac86-274ea28bc2b4)
+
+![image](https://github.com/user-attachments/assets/ee02c700-4c67-4d6a-8fb9-ed0c0cac8eae)
 
 ### Verify Join:
 
 * On DC: ADUC → `lab.local > Computers` → ✅ `WS01` listed
+
+![image](https://github.com/user-attachments/assets/a7642459-c65f-4d65-b86c-ae9c7adfb12c)
+
+![image](https://github.com/user-attachments/assets/1d548daa-44a7-4759-910d-c1dba6517e81)
 
 ---
 
