@@ -1145,8 +1145,12 @@ User Configuration > Policies > Administrative Templates > Desktop > Desktop > D
 ```
 \\dc01\netlogon\Engineering_Wallpaper.jpg
 ```
-![[Pasted image 20250523140901.png]]
+
+![image](https://github.com/user-attachments/assets/1a964c73-e2a7-405b-8823-af5465c23060)
+
 5. Apply → OK → Close GPO Editor
+
+![image](https://github.com/user-attachments/assets/d92d2942-258c-4edd-8f24-c4ce9c679086)
 
 ---
 
@@ -1156,9 +1160,19 @@ User Configuration > Policies > Administrative Templates > Desktop > Desktop > D
 
 ![image](https://github.com/user-attachments/assets/794c8a32-c135-4315-8e37-8bd3ebf6fa6d)
 
+![image](https://github.com/user-attachments/assets/622faaf8-ebd0-4e66-b4e9-a62a364eb01d)
+
+![image](https://github.com/user-attachments/assets/dd974de4-8a4b-4ebc-8737-633fcebe435e)
+
+* Restart the machine if it doesn't work after applying it
+
 * Log in as `ebachman` → ❌ No change
 
 ![image](https://github.com/user-attachments/assets/b3beb431-4634-4413-8c81-5d82e89e8af6)
+
+![image](https://github.com/user-attachments/assets/38c1bde6-5352-4a18-963e-cc19d1c714d3)
+
+![image](https://github.com/user-attachments/assets/2845bc81-3f5b-40a8-a1b4-06b646fdd861)
 
 ---
 
