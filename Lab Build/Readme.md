@@ -1020,24 +1020,143 @@ Click **Finish** → The shared drive is now mounted as Z:\
 * Log in as Jared → `\\dc01\Engineering Share` → ✅ Can write
 * Log in as Erlich → ❌ Access Denied
 
+![image](https://github.com/user-attachments/assets/e87d97ca-e4a6-4b24-a2c1-d726b9ef7152)
+
+![image](https://github.com/user-attachments/assets/5de5a8f4-9266-4309-80e6-8fb9fb2b2ce1)
+
+![image](https://github.com/user-attachments/assets/81607f10-cad8-414a-9db4-ff80a47d8dd5)
+
 📌 This demonstrates that **OU membership ≠ access rights**, while **group membership = permissions**.
 
 ---
 
 ## 🛠️ GPO: Set Desktop Wallpaper
 
-### Create GPO:
+### 🎨 Step 1: Create a Wallpaper File
 
-1. Paint: Create `Engineering_Wallpaper.jpg`
-2. Save in: `\\dc01\netlogon\`
-3. Group Policy Management → OU: Engineering → New GPO: `Set Engineering Background`
+1. Open **Paint** 🎨 on the **Domain Controller**
 
-### Configure:
+![image](https://github.com/user-attachments/assets/3e85b4d6-da6f-4482-a332-d644821b630a)
 
-* Edit GPO → User Config → Admin Templates → Desktop → Desktop Wallpaper
-* Enable → Set path: `\\dc01\netlogon\Engineering_Wallpaper.jpg`
+2. Resize canvas:
+    - `1920 x 1080 px`
+![image](https://github.com/user-attachments/assets/3a19d9f3-4de2-4325-88b8-7ede6976f17d)
 
-### Test:
+![image](https://github.com/user-attachments/assets/52db8ebd-273c-4a79-8666-b1b55f293e63)
+
+3. Add text: `Engineering Dept.`
+
+![image](https://github.com/user-attachments/assets/43e0a000-b79b-4669-a3ad-69b19ae58120)
+
+![image](https://github.com/user-attachments/assets/e119089e-d103-46b0-aba3-400f429f065b)
+
+![image](https://github.com/user-attachments/assets/c4eef2b3-99ff-4091-8390-85bbda6128af)
+
+4. Save as:
+    - 📄 `Engineering_Wallpaper.jpg`
+    - 📁 Location: **Desktop**
+
+![image](https://github.com/user-attachments/assets/c17b9fa6-5571-4990-a2f3-014af834e22e)
+
+![image](https://github.com/user-attachments/assets/178e80e2-e0cf-4635-9939-1d486d1aa9e8)
+
+---
+
+### 📂 Step 2: Move the Wallpaper to a Shared Folder
+
+We need to store the image where **domain users can read it**.
+
+1. Open:
+```
+Server Manager > File and Storage Services > Shares
+```
+
+![image](https://github.com/user-attachments/assets/fbf34d6b-ac42-4087-9987-deda9b69f5d1)
+
+2. Right-click **NetLogon** → `Open Share`
+
+![image](https://github.com/user-attachments/assets/93258f89-d466-481d-8231-334167ee93a2)
+
+3. Copy the `Engineering_Wallpaper.jpg` into this folder
+
+![image](https://github.com/user-attachments/assets/de6e05e5-4d5c-4df8-9956-05d190633a9c)
+
+![image](https://github.com/user-attachments/assets/afaf47a8-ffb1-415b-ad24-dc0a9204ca36)
+
+4. Hold **Shift** + Right-click the image → `Copy as path`
+
+![image](https://github.com/user-attachments/assets/daee04a8-eee0-4d80-9337-394d2d2da56d)
+
+✅ You now have the full UNC path (e.g. `\\dc01\netlogon\Engineering_Wallpaper.jpg`)
+
+---
+
+### 🧰 Step 3: Open Group Policy Management
+
+1. Go to:
+```
+Server Manager > Tools > Group Policy Management
+```
+
+![image](https://github.com/user-attachments/assets/363f83e0-f12e-471f-927e-04d5fd585415)
+
+2. Expand:
+```
+Forest > Domains > lab.local > Engineering
+```
+
+![image](https://github.com/user-attachments/assets/c533244c-b887-4b54-a8cf-981d7b418d8b)
+
+3. Right-click `Engineering` OU →  
+    Select:
+```
+Create a GPO in this domain, and Link it here…
+```
+
+![image](https://github.com/user-attachments/assets/04906c1f-ad7f-425c-aa32-2c1b568fd0fa)
+
+4. Name the GPO:
+```
+Set Engineering Background
+```
+![[Pasted image 20250523140005.png]]
+
+---
+
+### 🎛️ Step 4: Configure the GPO
+
+1. Right-click on the GPO → `Edit`
+![[Pasted image 20250523140653.png]]
+2. Navigate to:
+```
+User Configuration > Policies > Administrative Templates > Desktop > Desktop > Desktop Wallpaper
+```
+![[Pasted image 20250523140807.png]]
+3. Double-click `Desktop Wallpaper` → Set to `Enabled`
+![[Pasted image 20250523140838.png]]
+4. Paste the path from NetLogon (🛑 Remove quotes)
+```
+\\dc01\netlogon\Engineering_Wallpaper.jpg
+```
+![[Pasted image 20250523140901.png]]
+5. Apply → OK → Close GPO Editor
+
+---
+
+### 💻 Step 5: Test the GPO
+
+#### 🔑 Log in as: `lab\rhendricks`
+
+- Richard Hendricks is in the **Engineering OU**
+- Enter password: `P@ssword1!`
+![[Pasted image 20250523140945.png]]
+
+✅ The wallpaper should update to the Engineering-themed background!
+![[Pasted image 20250523140958.png]]
+
+---
+
+#### 🧪 Test with Non-Engineering User
 
 * Log in as `rhendricks` → ✅ Wallpaper appears
 * Log in as `ebachman` → ❌ No change
