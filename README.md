@@ -12,7 +12,6 @@ This lab simulates a basic **Active Directory environment** in a virtualized set
 * Set up a **Windows 11** client and join it to the domain
 * Create and manage **users**, **groups**, and **Organizational Units (OUs)**
 * Apply **Group Policies** to enforce system restrictions (e.g., wallpaper)
-* Use **PowerShell** to automate administrative tasks
 * Perform essential operations like **password resets**
 
 ---
