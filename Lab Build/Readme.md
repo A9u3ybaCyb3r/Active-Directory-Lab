@@ -944,21 +944,30 @@ Server Manager > File and Storage Services > Shares
 
 3. Remove:
     - `Users`
-![[Pasted image 20250523132942.png]]
+
+![image](https://github.com/user-attachments/assets/5025ddc2-57d8-4256-82c5-cc768307a79e)
+
 We remove them because that's going to give permission to everyone.
+
 4. Keep:
     - `SYSTEM`
     - `Administrators`
     - `CREATOR OWNER`
-![[Pasted image 20250523133118.png]]
+
 5. Click on Add and Select a principal and then Add:
     - `Engineering Share` group  → **Allow**: `Read` & `Write`
-![[Pasted image 20250523133203.png]]
-![[Pasted image 20250523133410.png]]
-![[Pasted image 20250523133546.png]]
+
+![image](https://github.com/user-attachments/assets/d0683c7c-c702-48d3-8e37-9427f8bf6a2e)
+
+![image](https://github.com/user-attachments/assets/336bfff0-f9b1-486c-83a4-5561086a9faf)
+
+![image](https://github.com/user-attachments/assets/886e1426-dfee-429d-9766-d4415aff34e4)
+
+![image](https://github.com/user-attachments/assets/91b88b60-7b78-4f30-9138-ae2e403c68de)
 
 ✅ Click OK → Next → Create
-![[Pasted image 20250523133440.png]]
+
+![image](https://github.com/user-attachments/assets/4298a128-9ab3-4b8f-b16a-fc0298089ce9)
 
 ---
 
@@ -970,29 +979,37 @@ We remove them because that's going to give permission to everyone.
 
 1. Sign in as: `lab\jdunn`  
     Password: `P@ssword1!`
-![[Pasted image 20250523133707.png]]
+
+![image](https://github.com/user-attachments/assets/e1bf8c3c-726b-44ac-ac9b-8d70ca48b998)
+
 2. Open **File Explorer** 
 3. In the address bar:
 ```
 \\dc01\Engineering Share
 ```
-![[Pasted image 20250523133727.png]]
-![[Pasted image 20250523133740.png]]
+
+![image](https://github.com/user-attachments/assets/f2b20691-d60f-4ea9-81a4-df748fd8a7eb)
+
 ✅ Jared should have full access — test by creating a file or folder.
-![[Pasted image 20250523133800.png]]
+
+![image](https://github.com/user-attachments/assets/1733e56d-250b-466a-ac3a-d890910160e5)
+
+![image](https://github.com/user-attachments/assets/4143e64c-0b6e-4d8c-b953-30e3eef6bdc6)
 
 ---
 
 ### 💾 (Optional) Map Network Drive
 
 1. In **This PC**, right-click → **Map network drive**
-![[Pasted image 20250523133859.png]]
+
+![image](https://github.com/user-attachments/assets/c2157aa3-1aba-49aa-a073-e8fda6eca4d7)
+
 2. Choose a letter (e.g., `Z:`)
 3. Path:
 ```
 \\dc01\Engineering Share
 ```
-![[Pasted image 20250523133933.png]]
+![image](https://github.com/user-attachments/assets/bb585d44-4900-4b55-af76-f6f51bfff62f)
 
 Click **Finish** → The shared drive is now mounted as Z:\
 
