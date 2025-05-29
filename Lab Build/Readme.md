@@ -797,28 +797,213 @@ Click **OK** → **Close**
 ![image](https://github.com/user-attachments/assets/1d548daa-44a7-4759-910d-c1dba6517e81)
 
 ---
+![image](https://github.com/user-attachments/assets/14df016c-f142-4233-9548-7b62222fd0f7)
 
-## 🧱 OUs vs Groups & Folder Sharing
+### 🖥️ 1. Open Active Directory Users & Computers
 
-### Create Security Group:
+On your **Domain Controller**:
 
-* OU: Engineering
-* Group: `Engineering Share`
-* Add: Richard, Nelson, Jared
+```
+Server Manager > Tools > Active Directory Users and Computers
+```
 
-### Create Shared Folder:
+Expand your domain:
 
-* File & Storage Services → New Share
-* Path: `C:\Engineering Share`
-* Customize permissions:
+```
+lab.local
+```
 
-  * Remove `Users`
-  * Add `Engineering Share` group → Read/Write
+---
+
+### 🗃️ 2. Create Organizational Units
+
+Right-click on your domain >
+
+```
+New > Organizational Unit
+```
+![image](https://github.com/user-attachments/assets/14df016c-f142-4233-9548-7b62222fd0f7)
+
+Create the following OUs:
+
+- `Engineering`
+- `Management`
+- `IT`
+
+![image](https://github.com/user-attachments/assets/016bb760-e479-44b7-94df-eef9797d56c0)
+
+📂 Optional:  
+Inside `IT`, create a **nested OU**:
+
+- `Administrators`
+
+---
+
+### 👨‍💻 3. Move Users to the OUs
+
+Drag and drop users into their respective departments:
+
+|User|OU|
+|---|---|
+|Richard Hendricks|Engineering|
+|Nelson Bighetti|Engineering|
+|Erlich Bachman|Management|
+|Jared Dunn|Management|
+|Administrator|IT > Administrators|
+
+![image](https://github.com/user-attachments/assets/1c370508-00be-446a-b76e-95fd915524cb)
+
+![image](https://github.com/user-attachments/assets/47317f48-2f92-4f50-a903-ea82c2825855)
+
+![image](https://github.com/user-attachments/assets/e74f4e9e-588e-4c18-90e8-7c35372bbf07)
+
+Confirm the move when prompted ✅
+
+---
+
+### 🧱 4. Create a Security Group
+
+Inside the `Engineering` OU:
+
+1. Right-click > `New > Group`
+
+![image](https://github.com/user-attachments/assets/06505108-f7d9-4421-8448-001b72e8b004)
+
+2. Name: `Engineering Share`
+3. Group Type: ✅ **Security**
+4. Click OK
+
+![image](https://github.com/user-attachments/assets/3b7fab61-4561-42f6-a63b-02ebe9c5921c)
+
+---
+
+### ➕ 5. Add Members to the Group
+
+Double-click `Engineering Share` > go to **Members tab** > click **Add**
+
+![image](https://github.com/user-attachments/assets/ccbfed9e-97bb-4a15-a91e-6b58930940b8)
+
+- Add: `Richard`, `Nelson`, ✅ and also `Jared`  
+    (Yes, he’s in Management, but needs access!)
+
+![image](https://github.com/user-attachments/assets/500206dd-bc20-4fa2-b7a3-c5be9ad7f454)
+
+Use **Check Names** to auto-complete entries.
+
+![image](https://github.com/user-attachments/assets/9e3b3a9a-2253-4654-a182-27a4e941bde0)
+
+![image](https://github.com/user-attachments/assets/149d1d24-c8b2-4ea1-9a34-616d8320c605)
+
+✅ Click Apply > OK
+
+---
+
+### 📂 6. Create a Shared Folder on the Domain Controller
+
+1. Go to:
+```
+Server Manager > File and Storage Services > Shares
+```
+
+![image](https://github.com/user-attachments/assets/f1405db2-6f0a-4941-8e76-cca686265396)
+
+![image](https://github.com/user-attachments/assets/c77499bc-097f-4ec1-adaa-4fe264111edb)
+
+2. Click **Tasks > New Share**
+
+![image](https://github.com/user-attachments/assets/18a1ea8f-2911-4cfe-9de5-7bba1a1c2dcf)
+
+3. Choose: `SMB Share - Quick`
+
+![image](https://github.com/user-attachments/assets/6a6d8101-d565-45c8-a06e-c52075d78422)
+
+### Share Settings:
+
+| Setting        | Value               |
+| -------------- | ------------------- |
+| Share Location | `C:\`               |
+| Share Name     | `Engineering Share` |
+| Permissions    | Customized          |
+
+![image](https://github.com/user-attachments/assets/de791b52-bc88-4735-a1f5-683c071f85d8)
+
+![image](https://github.com/user-attachments/assets/6cd12ddb-a05a-4685-9b85-c6364526d9a2)
+
+![image](https://github.com/user-attachments/assets/a4be59b3-402d-4aa3-94f5-e3406888eb5c)
+
+![image](https://github.com/user-attachments/assets/dd42ba87-7528-46d3-bc77-24bb99614d70)
+
+---
+
+### 🛡️ 7. Configure Share Permissions
+
+1. Click **Customize permissions**
+2. Disable inheritance > Convert permissions
+
+![image](https://github.com/user-attachments/assets/c7e93462-287e-448e-a999-a8736d155494)
+
+3. Remove:
+    - `Users`
+![[Pasted image 20250523132942.png]]
+We remove them because that's going to give permission to everyone.
+4. Keep:
+    - `SYSTEM`
+    - `Administrators`
+    - `CREATOR OWNER`
+![[Pasted image 20250523133118.png]]
+5. Click on Add and Select a principal and then Add:
+    - `Engineering Share` group  → **Allow**: `Read` & `Write`
+![[Pasted image 20250523133203.png]]
+![[Pasted image 20250523133410.png]]
+![[Pasted image 20250523133546.png]]
+
+✅ Click OK → Next → Create
+![[Pasted image 20250523133440.png]]
+
+---
+
+## 💻 8. Test from the Windows 11 Workstation
+
+---
+
+### 👤 Login as `Jared Dunn`
+
+1. Sign in as: `lab\jdunn`  
+    Password: `P@ssword1!`
+![[Pasted image 20250523133707.png]]
+2. Open **File Explorer** 
+3. In the address bar:
+```
+\\dc01\Engineering Share
+```
+![[Pasted image 20250523133727.png]]
+![[Pasted image 20250523133740.png]]
+✅ Jared should have full access — test by creating a file or folder.
+![[Pasted image 20250523133800.png]]
+
+---
+
+### 💾 (Optional) Map Network Drive
+
+1. In **This PC**, right-click → **Map network drive**
+![[Pasted image 20250523133859.png]]
+2. Choose a letter (e.g., `Z:`)
+3. Path:
+```
+\\dc01\Engineering Share
+```
+![[Pasted image 20250523133933.png]]
+
+Click **Finish** → The shared drive is now mounted as Z:\
+
+![[Pasted image 20250523134005.png]]
 
 ### Test Access:
 
 * Log in as Jared → `\\dc01\Engineering Share` → ✅ Can write
 * Log in as Erlich → ❌ Access Denied
+
+📌 This demonstrates that **OU membership ≠ access rights**, while **group membership = permissions**.
 
 ---
 
