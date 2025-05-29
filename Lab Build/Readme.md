@@ -724,7 +724,7 @@ Click **OK** → **Close**
 ```
 ipconfig
 ```
-    Example IP: `10.0.2.4`
+Example IP: `10.0.2.4`
 
 ![image](https://github.com/user-attachments/assets/bfa84d0e-c739-44ac-91ed-3209960e600b)
 
