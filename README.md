@@ -23,7 +23,6 @@ This lab simulates a basic **Active Directory environment** in a virtualized set
 * Domain joining process using Windows 11
 * User, Group, and OU management within Active Directory
 * Group Policy Object (GPO) creation and enforcement
-* PowerShell scripting for AD automation
 * Real-world concepts of enterprise identity and access control
 
 ---
